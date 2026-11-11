@@ -20,7 +20,7 @@ evidence, and reports trends. One codebase, one industry active at a time:
 | `backend/` | FastAPI server, detection engine (YOLO11-pose, SigLIP 2, YOLO-World), SQLite database, Alembic migrations |
 | `backend/app/industries/` | One pack per industry: checks, zone types, rules, labels |
 | `backend/scripts/` | `download_models.py`, `setup_demo.py` (demo cameras), `analyze_videos.py` (accuracy check) |
-| `backend/data/demo*/` | Demo guides and the prompts used to generate the demo videos (videos not included) |
+| `backend/data/demo*/` | Demo videos (AI-generated), their guides, prompts and expected results |
 | `frontend/` | React + TypeScript web app (Vite, Tailwind) |
 
 ## Development
@@ -33,7 +33,7 @@ cd frontend  ; npx playwright test                     # end-to-end tests (own b
 ```
 
 Not in the repository (see `.gitignore`): installed libraries, AI models (downloaded by
-`backend/scripts/download_models.py`), the database and event photos, demo videos.
+`backend/scripts/download_models.py`), the database and event photos.
 
 Note: Ultralytics YOLO is AGPL-3.0 licensed — a closed-source commercial product needs an Ultralytics
 Enterprise License (or a switch to permissively licensed models).

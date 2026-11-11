@@ -38,9 +38,7 @@ browser opens http://127.0.0.1:5173 after about 15 seconds.
 
 ## 5. Try the demo videos (optional)
 
-The demo videos are **not** in the repository (they are large). Generate them with the prompts in
-`backend\data\demo\VIDEO_PROMPTS.md` and `backend\data\demo_cement\VIDEO_PROMPTS*.md` (or copy them from
-Azkashine), put them in those folders with the listed file names, then, with VigilSiddhi running, open a Command Prompt in the `backend` folder and run:
+The demo videos are included (`backend\data\demo` and `backend\data\demo_cement`). With VigilSiddhi running, open a Command Prompt in the `backend` folder and run:
 
 ```
 .venv\Scripts\python.exe scripts\setup_demo.py --industry cement --clear-events

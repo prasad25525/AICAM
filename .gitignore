@@ -16,8 +16,7 @@ backend/data/backups/
 backend/data/events/
 backend/data/test_pattern.mp4
 
-# --- Demo videos (large; generated with backend/data/demo*/VIDEO_PROMPTS*.md) ---
-*.mp4
+# --- Demo videos: the originals are in git (small); the 12 fps copies are made by setup_demo.py ---
 backend/data/demo*/lite/
 
 # --- AI models (too large for git; download with backend/scripts/download_models.py) ---
