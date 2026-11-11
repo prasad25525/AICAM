@@ -1,0 +1,19 @@
+{
+  "_help": "What is really true in each cement demo video. true = the item IS worn. People: P = the only person; L / R = left / right person when there are two. _expect = the alert(s) each video should raise.",
+  "01_ppe_compliant.mp4": {"P": {"no_helmet": true, "no_vest": true}, "_expect": []},
+  "02_no_ppe_worker.mp4": {"P": {"no_helmet": false, "no_vest": false}, "_expect": ["no_helmet", "no_vest"]},
+  "03_mixed_crew.mp4": {
+    "L": {"no_helmet": true, "no_vest": true},
+    "R": {"no_helmet": false, "no_vest": false},
+    "_expect": ["no_helmet", "no_vest"]
+  },
+  "04_restricted_area.mp4": {"P": {"no_helmet": true, "no_vest": true}, "_expect": ["restricted_area"]},
+  "05_conveyor_spillage.mp4": {"_expect": ["conveyor_spillage"]},
+  "06_conveyor_normal.mp4": {"_expect": []},
+  "07_bag_counting.mp4": {"_expect": [], "bags_loaded_per_loop": 5, "_note": "about 9 different bags are seen; 5 reach the end and are loaded in the 10 s clip"},
+  "08_damaged_bag.mp4": {"_expect": ["damaged_bag"]},
+  "09_truck_entry.mp4": {"_expect": [], "trucks_in": 1, "trucks_out": 0},
+  "10_truck_exit.mp4": {"_expect": [], "trucks_in": 0, "trucks_out": 1},
+  "11_dust_emission.mp4": {"_expect": ["dust_visible"]},
+  "12_dust_clear.mp4": {"_expect": []}
+}

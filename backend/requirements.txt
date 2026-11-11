@@ -1,0 +1,47 @@
+# AICAM - kitchen & customer-area hygiene monitoring
+# Python 3.11 | CUDA 12.6 build of PyTorch
+# Install: python -m venv .venv ; .\.venv\Scripts\python.exe -m pip install -r requirements.txt
+
+--extra-index-url https://download.pytorch.org/whl/cu126
+
+# Deep learning
+torch==2.14.0+cu126
+torchvision==0.29.0+cu126
+
+# Detection, tracking, zones
+ultralytics==8.4.165
+# CLIP for YOLO-World: embeds the tableware names once (then saved into yolov8s-worldv2-tableware.pt)
+clip @ https://github.com/ultralytics/CLIP/archive/refs/heads/main.zip
+ftfy==6.3.1
+supervision==0.30.5
+
+# Vision / hands
+opencv-python==5.0.0.93
+mediapipe==1.0.1
+
+# Zero-shot auto-labeling (Grounding DINO, OWLv2, Florence-2)
+transformers==5.17.0
+accelerate==1.15.0
+huggingface_hub==1.33.0
+timm==1.0.30
+einops==0.8.2
+
+# Export / inference runtime
+onnx==1.23.0
+onnxruntime-gpu==1.30.0
+
+# Backend, events & alerts
+fastapi==0.141.1
+uvicorn[standard]==0.54.0
+paho-mqtt==2.1.0
+SQLAlchemy==2.1.1
+alembic==1.20.0
+psycopg2-binary==2.9.13
+pydantic-settings==2.15.0
+python-multipart==0.0.32
+
+# Labeling
+label-studio-sdk==2.1.2
+
+# Testing (python -m pytest)
+pytest==9.1.1

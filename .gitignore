@@ -1,0 +1,43 @@
+# --- Installed libraries (rebuilt by install.bat) ---
+node_modules/
+backend/.venv/
+.venv/
+
+# --- Secrets and local settings ---
+.env
+!.env.example
+!frontend/.env.development
+
+# --- Database, backups, event snapshots (site data: cameras, passwords, photos) ---
+backend/data/*.db
+backend/data/*.db-shm
+backend/data/*.db-wal
+backend/data/backups/
+backend/data/events/
+backend/data/test_pattern.mp4
+
+# --- Demo videos (large; generated with backend/data/demo*/VIDEO_PROMPTS*.md) ---
+*.mp4
+backend/data/demo*/lite/
+
+# --- AI models (too large for git; download with backend/scripts/download_models.py) ---
+backend/models/
+backend/weights/
+
+# --- Build and test output ---
+frontend/dist/
+frontend/playwright-report/
+frontend/test-results/
+frontend/e2e/screenshots/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# --- Internal business documents (pricing) ---
+docs/
+
+# --- Editors / OS ---
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store

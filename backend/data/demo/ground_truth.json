@@ -1,0 +1,12 @@
+{
+  "_help": "What is really true in each demo video. true = the item IS worn. People: P = the only person; L / R = left / right person when there are two.",
+  "01_compliant_chef.mp4": {"P": {"no_hair_cover": true, "no_mask": true, "no_gloves": true, "no_apron": true}},
+  "02_no_ppe_cook.mp4": {"P": {"no_hair_cover": false, "no_mask": false, "no_gloves": false, "no_apron": false}},
+  "03_mixed_team.mp4": {
+    "L": {"no_hair_cover": true, "no_mask": true, "no_gloves": true, "no_apron": true},
+    "R": {"no_hair_cover": false, "no_mask": false, "no_gloves": false, "no_apron": false}
+  },
+  "04_handwash_short.mp4": {"P": {"no_hair_cover": true, "no_mask": true, "no_gloves": false, "no_apron": true}},
+  "05_handwash_skipped.mp4": {"P": {"no_hair_cover": true, "no_mask": true, "no_gloves": false, "no_apron": true}},
+  "06_dirty_table.mp4": {}
+}
